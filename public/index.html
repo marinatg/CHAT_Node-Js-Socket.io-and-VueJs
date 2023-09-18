@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kodoti Chat</title>
+    <title>App Chat con NodeJS</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -13,8 +13,7 @@
     <section id="app" class="hero is-fullheight">
         <div class="hero-body">
             <div class="container">
-                <h1 class="title">Kodoti Chat</h1>
-                <h2 class="subtitle">Powered by <a href="https://kodoti.com">kodoti.com</a></h2>
+                <h1 class="title">Purple Chat</h1>
 
                 <template v-if="step === 'nick'">
                     <div class="columns">
@@ -25,7 +24,7 @@
                                         placeholder="Ingrese su nick">
                                 </div>
                                 <div class="control">
-                                    <a @click="signIn" class="button is-info is-medium">
+                                    <a @click="signIn" class="button is-medium">
                                         Ingresar
                                     </a>
                                 </div>
@@ -50,7 +49,7 @@
                                 placeholder="Ingrese el mensaje">
                         </div>
                         <div class="control">
-                            <a @click="send" class="button is-info is-medium">
+                            <a @click="send" class="button is-medium">
                                 Enviar
                             </a>
                         </div>
@@ -66,7 +65,8 @@
     </section>
 
     <script src="/socket.io/socket.io.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
     <script src="./chat.js"></script>
 </body>
 

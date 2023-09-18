@@ -1,5 +1,5 @@
 body {
-    background: #ddd;
+    background: #c1aee9;
 }
 
 .chat-container {
@@ -15,4 +15,8 @@ body {
 
 .chat-message.me {
     background: #dcf8c6;
+}
+
+.button {
+    background-color: #8d68eb;
 }
